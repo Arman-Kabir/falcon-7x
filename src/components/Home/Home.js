@@ -6,9 +6,10 @@ import Review from '../Review/Review';
 
 const Home = () => {
     const [reviews, setReviews] = useReviews();
-    const seeAllReviews = () =>{
+    const seeAllReviews = () => {
         <Link to='/reviews'></Link>
     }
+    const reviewsThree = reviews.slice(0, 3);
     return (
         <div className='home-container'>
             <div className='hero-section grid grid-cols-2 py-20 px-40'>
@@ -27,7 +28,7 @@ const Home = () => {
                 <h1 className='text-6xl'>Customer Reviews({reviews.length})</h1>
                 <div className='grid grid-cols-3 gap-4 w-3/4 mx-auto mt-10'>
                     {
-                        reviews.map(review => 
+                        reviewsThree.map(review =>
                             <Review
                                 review={review}
                                 key={review.id}
@@ -35,7 +36,11 @@ const Home = () => {
                             // return review.index<3;
                         )
                     }
-                    <button className='text-4xl mx-auto text-amber-600 ' onClick={seeAllReviews}>See all Reviews</button>
+                    {/* <button className='text-4xl mx-auto text-amber-600 ' onClick={seeAllReviews}>See all Reviews</button> */}
+
+                    <div></div>
+                    <button className='text-4xl mx-auto text-amber-600'><Link className='' to='/reviews'>See all Reviews</Link></button>
+
 
                 </div>
             </div>
