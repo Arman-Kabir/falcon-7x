@@ -12,8 +12,8 @@ const Dashboard = () => {
     console.log(data);
 
     return (
-        <div>
-            <h1 className='text-4xl font-bold text-blue-400 my-10'>It's The Overall Overview of our product</h1>
+        <div className='bg-lime-100'>
+            <h1 className='text-4xl font-bold text-lime-600 py-10'>It's The Overall Overview of our product</h1>
 
             <div className='grid md:grid-cols-2 gap-10'>
                 {/* Line Chart */}
