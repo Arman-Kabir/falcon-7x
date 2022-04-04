@@ -1,71 +1,34 @@
 # Falcon-7x
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[Github Repo](https://github.com/programming-hero-web-course-4/product-analysis-website-Arman-Kabir).
 
-## Available Scripts
+[Netlify Live Site](https://falcon-7x-arman-kabir.netlify.app/).
 
-In the project directory, you can run:
+## `About The Project`
 
-### `npm start`
+This Project is a simple plane review Website .Purpose of this site is to practice `react router`, `basic react concepts`,`charting library`,`css framework` all in a project.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### `Home`
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+In The homepage, u can see site introduction at first then `3 customer reviews`. U can click `See all Reviews ` to go to the `Reviews` Page.
 
-### `npm test`
+### `Reviews`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+In this Page, u can see all customer reviews about our peoduct. `Reviewers Name, Image, given Rating and review description`.
 
-### `npm run build`
+### `Dashboard`
+This page shows 4 graphs as a visual representation of our business
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### `Blogs`
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+This page show some blogs. Initially To questions answers-- `1.Context Api, 2. Semantic Tags`. 
 
-### `npm run eject`
+### `About`
+This is About Us Page
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### `NotFound`
+There is a page `NotFound` . If in case - user gives wrong url.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 # product-analysis-website-Arman-Kabir
