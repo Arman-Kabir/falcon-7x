@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Area, AreaChart, CartesianGrid, Legend, Line, LineChart, Tooltip, XAxis, YAxis } from 'recharts';
+import { Area, AreaChart, Bar, BarChart, CartesianGrid, Legend, Line, LineChart, Pie, PieChart, Tooltip, XAxis, YAxis } from 'recharts';
 
 
 const Dashboard = () => {
@@ -15,9 +15,9 @@ const Dashboard = () => {
         <div>
             <h1 className='text-4xl font-bold text-blue-400 my-10'>It's The Overall Overview of our product</h1>
 
-            <div className='grid grid-cols-2 gap-6'>
+            <div className='grid md:grid-cols-2 gap-10'>
                 {/* Line Chart */}
-                <div className='line-chart'>
+                <div className='line-chart flex flex-col items-center'>
                     <h2 className='text-xl text-blue-400'>Month Wise Sell</h2>
                     <LineChart width={400} height={300} data={data}>
                         <CartesianGrid strokeDasharray="3 3" />
@@ -29,7 +29,7 @@ const Dashboard = () => {
                     </LineChart>
                 </div>
                 {/*Area Chart  */}
-                <div className='area-chart'>
+                <div className='area-chart flex flex-col items-center'>
                     <h2 className='text-xl text-blue-400'>Investment vs Revenue</h2>
                     <AreaChart width={400} height={300} data={data}>
                         <CartesianGrid strokeDasharray="3 3" />
@@ -41,6 +41,31 @@ const Dashboard = () => {
                         <Tooltip></Tooltip>
                         <Legend></Legend>
                     </AreaChart>
+                </div>
+                {/* Bar Chart */}
+                <div className='bar-chart flex flex-col items-center'>
+                    <h2 className='text-xl text-blue-400'>Investment vs Revenue</h2>
+                    <BarChart width={400} height={300} data={data}>
+                        <CartesianGrid strokeDasharray="3 3" />
+                        <XAxis dataKey={'month'}></XAxis>
+                        <YAxis></YAxis>
+                        <Tooltip></Tooltip>
+                        <Legend></Legend>
+                        <Bar dataKey={'investment'} fill={'green'}></Bar>
+                        <Bar dataKey={'revenue'} fill={'blue'}></Bar>
+                    </BarChart>
+                </div>
+                {/* Pie Chart */}
+                <div className='pie-chart  flex flex-col items-center'>
+                    <h2 className='text-xl text-blue-400'>Investment vs Revenue</h2>
+                    <PieChart width={400} height={300} data={data}>
+                        {/* <Pie dataKey={'investment'}></Pie>
+                        <Pie dataKey={'revenue'}></Pie> */}
+                        <Pie data={data} dataKey="investment" nameKey="investment" cx="50%" cy="50%" outerRadius={50} fill="#8884d8" />
+                        <Pie data={data} dataKey="revenue" nameKey="revenue" cx="50%" cy="50%" innerRadius={60} outerRadius={80} fill="#82ca9d" label />
+
+                    </PieChart>
+
                 </div>
 
             </div>
